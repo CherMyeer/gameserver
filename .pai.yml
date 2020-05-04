@@ -1,0 +1,11 @@
+deployScripts:
+  start:
+    - npm install
+    - npm run start
+  delete:
+    - npm run stop
+  restart:
+    - npm install
+    - sleep 3
+    - sh my_build_script.sh
+    - npm run restart
