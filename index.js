@@ -20,6 +20,12 @@ ws.on("connect", socket => {
   socket.on("disconnect", () => {
     console.log("disconnect socket id: " + socket.id);
   });
+
+  socket.on("message", data=>{
+    let tData = JSON.parse(data);
+    console.log("receive msg data:");
+    console.log(tData);
+  })
 });
 
 server.listen(port, "localhost", () => {
