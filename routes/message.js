@@ -2,7 +2,7 @@ const msg = require("koa-router")();
 //const fs = require("fs");
 // const pt = require("path");
 
-ping.get("/message", ctx => {
+msg.get("/message", ctx => {
   ctx.response.type = "html";
   ctx.response.body = "heartbeat";
 
@@ -14,4 +14,4 @@ ping.get("/message", ctx => {
   */
 });
 
-module.exports = ping;
+module.exports = msg;
