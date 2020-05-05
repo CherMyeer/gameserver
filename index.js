@@ -1,14 +1,12 @@
 const Koa = require("koa");
 const app = new Koa();
-//const port = 3000;
-//const server = require("http").Server(app.callback());
-//let socketio = require("socket.io")(server);
-
 const routers = require("./routes/index");
 app.use(routers.routes());
 
-app.listen(3000);
-/*
+//*
+const port = 3000;
+const server = require("http").Server(app.callback());
+let socketio = require("socket.io")(server);
 let ws = socketio.of("/ws");
 ws.on("connect", socket => {
   console.log("connect, socket id: " + socket.id);
@@ -33,4 +31,4 @@ ws.on("connect", socket => {
 server.listen(port, "localhost", () => {
   console.log(`server listening on port ${port}!`);
 });
-*/
+//*/
