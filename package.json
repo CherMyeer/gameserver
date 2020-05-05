@@ -1,5 +1,5 @@
 {
-  "name": "pai-mate-hello-example",
+  "name": "gameserver",
   "version": "0.0.1",
   "description": "Example app for deploy webapp with pai-mate",
   "main": "index.js",

@@ -1,4 +1,4 @@
-# pai-mate-hello-example
+# gameserver
 Example app for deploy webapp with pai-mate
 
 ## route
