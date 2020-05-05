@@ -4,21 +4,15 @@
   "description": "Example app for deploy webapp with pai-mate",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 -s start --name=hello-world-example index.js",
-    "restart": "pm2 -s restart hello-world-example",
-    "stop": "pm2 -s delete hello-world-example",
+    "start": "pm2 -s start --name=gameserver index.js",
+    "restart": "pm2 -s restart gameserver",
+    "stop": "pm2 -s delete gameserver",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TencentCloudBase/pai-mate-hello-example.git"
+    "url": "git+https://github.com/CherMyeer/gameserver.git"
   },
-  "author": "BrookeYang<brookeyang@tencent.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TencentCloudBase/pai-mate-hello-example/issues"
-  },
-  "homepage": "https://github.com/TencentCloudBase/pai-mate-hello-example#readme",
   "dependencies": {
     "shelljs": "^0.8.3",
     "yaml": "^1.6.0",
