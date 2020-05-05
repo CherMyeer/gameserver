@@ -1,8 +1,10 @@
-const helloworld = require("koa-router")();
+const client = require("koa-router")();
 
-helloworld.get("/", ctx => {
+client.get("/", ctx => {
   ctx.response.type = "html";
-  ctx.response.body = "Hello World!";
+  ctx.response.body = "OnConnect";
+
+  console.log("---------------------------------- on connect -----------------------------------------");
 });
 
-module.exports = helloworld;
+module.exports = client;
