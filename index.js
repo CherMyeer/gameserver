@@ -1,9 +1,15 @@
+// require("./sqlite/db_index")
+
+const config = require("./config")
 const Koa = require("koa");
 const app = new Koa();
 const routers = require("./routes/index");
 app.use(routers.routes());
 
 app.listen(3000);
+
+console.log("基础配置信息：")
+console.log(config);
 /*
 const port = 3000;
 const server = require("http").Server(app.callback());
